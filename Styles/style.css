@@ -1,0 +1,909 @@
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+
+html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+
+*, *:before, *:after {box-sizing: inherit}
+
+.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
+
+/* **************** */
+/* STRIPPING STYLES */
+/* **************** */
+body,
+p, 
+ul,
+h1,
+h2,
+h3,
+h4,
+button,
+img {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #000;
+    background-color: #F4F3F0;
+}
+
+.wrapper {
+    max-width: 1800px;
+    width: 85%;
+    margin: 0 auto;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a,
+h3 {
+    display: inline-block;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.nav1,
+.footer {
+    justify-content: space-between;
+}
+
+.header-text,
+.practice-text,
+.myForm,
+.inputGroup {
+    flex-direction: column;
+}
+
+.nav1,
+.logo,
+button,
+h3 {
+    text-transform: uppercase;
+}
+
+.nav1,
+h2,
+button {
+    letter-spacing: 1.3px;
+}
+
+h1,
+h3 {
+    letter-spacing: 1.5px;
+}
+
+.logo {
+    letter-spacing: 2px;
+    font-size: 2.8rem;
+}
+
+h2 {
+    font-size: 2.8rem;
+}
+
+h3,
+button {
+    font-size: 1.6rem;
+}
+
+h4 {
+    font-size: 1.8rem;
+}
+
+.clientsParagraph,
+p {
+    line-height: 1.6;
+}
+
+.nav1,
+.logo,
+p,
+.label,
+.footerNav a {
+    font-weight: 400;
+}
+
+h2,
+.img-container,
+.imgOne,
+.gallery li,
+.clientInfo {
+    position: relative;
+}
+
+h2::before,
+.img-container::before,
+h3,
+.arrow {
+    position: absolute;
+}
+
+h2::before {
+    border-bottom: 2.5px solid #B18F39;
+    content: "";
+    width: 50px;
+    bottom: -40%;
+    left: 0;
+}
+
+button:hover,
+button:focus {
+    background: #F4F3F0;
+}
+
+button:hover,
+button:focus,
+input,
+textarea {
+    border: 2px solid #B18F39;
+}
+
+button:hover,
+button:focus,
+.nav1 li a:hover,
+.nav1 li a:focus {
+    color: #B18F39;
+}
+
+/* ************* */
+/* HEADER STYLES */
+/* ************* */
+header {
+    padding: 30px 0 6%;
+}
+
+.nav1 li:nth-child(-n+3){
+    padding-right: 10%;
+}
+
+.nav1 ul {
+    justify-content: flex-end;
+}
+
+.nav1 li a {
+    padding-bottom: 10px;
+    border-bottom: 2px solid transparent;
+}
+
+.nav1 li a:hover,
+.nav1 li a:focus {
+    border-bottom: 2px solid #000;
+}
+
+.nav1 label,
+input[type="checkbox"] {
+    display: none;
+}
+
+h1 {
+    font-size: calc(2rem + 1vw);
+    line-height: 1.5;
+    text-align: center;
+    width: 60%;
+    align-self: center;
+    margin-top: 40px;
+}
+
+.img-container {
+    height: 435px;
+    margin-top: 90px;
+}
+
+.img-container::before {
+    content: url("../assets/badge.png");
+    top: -16%;
+    left: 42%;
+}
+/* ************************* */
+/* SECTION 'PRACTICE' STYLES */
+/* ************************* */
+.practice {
+    padding-bottom: 150px;
+}
+
+.practice-text {
+    width: 42%;
+    padding-top: 40px;
+}
+
+.practice-text p {
+    margin: 40px 0 30px;
+}
+
+button {
+    background-color: #B18F39;
+    border: 2px solid transparent;
+    color: #F4F3F0;
+    cursor: pointer;
+}
+
+button a {
+    padding: 15px 30px;
+}
+
+.overlap {
+    height: 410px;
+    width: 58%;
+}
+
+.imgOne {
+    top: 160px;
+    left: 120px;
+}
+
+.imgTwo {
+    width: 52%
+}
+
+.imgOne {
+    width: 48%;;
+}
+/* ************************** */
+/* SECTION 'SPOTLIGHT' STYLES */
+/* ************************** */
+.spotlight {
+    padding-bottom: 6%;
+}
+
+.spotlight p {
+    margin: 40px 0;
+    width: 43%;
+}
+
+.gallery {
+    flex-wrap: wrap;
+}
+
+.half {
+    width: calc(100%/2 - 1%);
+    margin-bottom: 1%;
+}
+
+.picOne,
+.picThree,
+.picFour{
+    margin-right: 1%;
+}
+
+.picTwo,
+.picFour,
+.picFive {
+    margin-left: 1%;
+}
+
+.thirds {
+    width: calc(100%/3 - 1%);
+    margin-top: 1%;
+    height: 370px;
+}
+
+.picFour {
+    width: calc(100%/3 - 2%);
+}
+
+h3 {
+    background-color: #FFF;
+    padding: 15px 30px;
+    right: 0;
+    bottom: 15px;
+}
+/* *********** */
+/* FORM STYLES */
+/* *********** */
+.form {
+    background: url(../assets/image8.jpg);
+    background-repeat: none;
+    background-position: cover;
+    padding: 60px 0;
+}
+
+.form p {
+    margin: 40px 0;
+    width: 43%;
+}
+
+textarea {
+    resize: none;
+}
+
+label {
+    font-size: 1.5rem;
+    padding-bottom: 10px;
+}
+
+.info {
+    margin-bottom: 20px;
+}
+
+.info,
+textarea {
+    width: 70%;
+}
+
+.name {
+    width: calc(40% - 1%);
+    margin-right: 1%;
+}
+
+.email {
+    width: calc(60% - 1%);
+    margin-left: 1%;
+}
+
+input,
+textarea {
+    padding: 10px;
+}
+
+.form button {
+    margin-top: 35px;
+}
+/* ************************ */
+/* SECTION 'CLIENTS' STYLES */
+/* ************************ */
+.clients {
+    padding: 60px 0;
+}
+
+.clientsParagraph {
+    font-size: 2.8rem;
+    margin: 40px 0;
+    width: 62%;
+}
+
+.review {
+    margin-top: 70px;
+    padding-left: 50px;
+    border-left: 5px solid #B18F39;
+}
+
+.clientInfo {
+    padding: 10px 0;
+    width: 60%;
+}    
+
+.clientPic {
+    height: 115px;
+    width: 115px;
+    border-radius: 50%;
+}
+
+.clientName {
+    font-weight: 600;
+    font-size: 2.5rem;
+}
+
+.clientCompany {
+    font-size: 1.6rem;
+    margin-top: 5px;
+}
+
+.client {
+    padding: 0 2%;
+    letter-spacing: 0.5px;
+}
+
+.arrow {
+    height: 15px;
+    width: 110px;
+    top: 40px;
+    right: -10px;
+}
+/* ************* */
+/* FOOTER STYLES */
+/* ************* */
+.footerImg {
+    height: 52vh;
+    margin-bottom: 7%;
+}
+
+.footer {
+    padding-bottom: 25px;
+}
+
+.footer .logo {
+    margin-bottom: 10px;
+}
+
+.contact {
+    margin: 15px 0;
+    font-size: 1.6rem;
+}
+
+.nav2 li {
+    padding: 0 20px;
+}
+
+h4 {
+    margin: 0 0 30px 20px;
+    letter-spacing: 0.25px;
+}
+
+.footerNav a {
+    padding: 7px 0;
+    font-size: 1.6rem;
+    text-decoration: underline;
+}
+
+.Juno {
+    padding: 13px 0 50px 0;
+    border-top: 1px solid #9c9b98;
+    color: #9c9b98;
+}
+
+/* ************************ */
+/* RESPONSIVE DESIGN BEGINS */
+/* ************************ */
+
+/* SMALL DESKTOPS - 1st BIG BREAK POINT */
+@media (max-width: 980px) {
+    /* wrapper  */
+    .wrapper {
+        width: 90%;
+    }
+
+    /**** Header ****/
+    .menu {
+        font-size: 1.6rem;
+    }
+
+    .nav1 li {
+        font-size: 1.6rem;
+    }
+
+    h1 {
+        width: 70%;
+    }
+
+    .img-container {
+        height: 350px;
+    }
+
+    .img-container::before {
+        top: -20%;
+        left: 40%;
+    }
+
+    /**** Section 'Practice' ****/
+    p {
+        font-size: 1.7rem;
+    }
+
+    .overlap {
+        height: 350px;
+    }
+
+}
+
+/* LANDSCAPE PHONE/PORTRAINT TABLET - 2nd BIG BREAK POINT */
+@media (max-width: 768px) {
+    /**** Header ****/
+    /* nav slide-out menu */
+    .menu {
+        font-size: 1.8rem;
+        border-top: 2px solid #000;
+        border-bottom: 2px solid #000;
+        padding: 10% 0;
+    }
+
+    ul.slideOut-menu {
+        flex-direction: column;
+        justify-content: space-evenly;
+        border-top: 2px solid #F4F3F0;
+        background: #9C9B98;
+        position: fixed;
+        z-index: 10;
+        width: calc(55% + 1vw); 
+        right: calc(-55% + (-1vw));
+        top: 100px;
+        height: 60%;
+        transition: all 0.6s;
+    }
+
+    ul.slideOut-menu a {
+        display: inline-block;
+        font-size: calc(3.5rem + 1vw);
+        padding: 15px 30px;
+        width: 100%;
+    }
+
+    ul.slideOut-menu li {
+        border-bottom: 2px solid #F4F3F0;
+    }
+    
+    ul.slideOut-menu a:hover,
+    ul.slideOut-menu a:focus {
+        color: #F4F3F0;
+        border-bottom: 2px solid transparent;
+    }
+
+    .nav1 label {
+        display: block;
+        font-size: 3.5rem;
+    }
+
+    input[type="checkbox"]:checked + ul.slideOut-menu {
+        right: 0px;  
+    }
+
+    label[for="toggle"] {
+        position: fixed;
+        top: 20px;
+        right: 37px;
+        z-index: 10;	
+    }
+
+    /* main header title & image */
+    h1 {
+        width: 80%;
+    }
+
+    .img-container::before {
+        left: 38%;
+    }
+
+    /**** Section 'Practice' ****/
+    .practice .wrapper {
+        flex-direction: column;
+    }
+
+    .practice-text {
+        width: 100%;
+    }
+
+    .overlap {
+        flex-direction: column;
+        width: 100%;
+        height: 420px;
+        position: relative;
+        margin-top: 40px;
+    }
+
+    .imgOne {
+        width: 60%;
+        height: 100%;
+        position: relative;
+        left: 0;
+        top: 80px;
+        z-index: 10;
+    }
+
+    .imgTwo {
+        width: 65%;
+        height: 100%;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    /**** Section 'Spotlight'****/
+    .spotlight p {
+        width: 80%;
+    }
+
+    .full {
+        width: 100%;
+        margin: 1% 0;
+        height: 300px;
+    }
+
+    .picFour {
+        width: calc(100%/2 - 1%);
+        margin-right: 1%;
+        margin-left: 0;
+    }
+
+    .picFive {
+        width: calc(100%/2 - 1%);
+        margin-left: 1%;
+    }
+
+    h3 {
+        bottom: 0;
+    }
+    
+    /**** Form Section ****/
+    .form p {
+        width: 80%;
+    }
+
+    .info {
+        flex-direction: column;
+    }
+
+    .name,
+    .email {
+        width: 80%;
+        margin: 0;
+    }
+
+    .info,
+        textarea {
+        width: 80%;
+    }
+
+    .email {
+        margin-top: 20px;
+    }
+
+    /**** Section 'Clients' ****/
+    .clientsParagraph {
+        width: 80%;
+        font-size: 2.4rem;
+        padding: 2px 0;
+    }
+
+    .clientInfo {
+        width: 100%;
+    }
+
+    .review {
+        padding-left: 20px;
+        margin-top: 60px;
+    }
+
+    .clientPic {
+        height: 95px;
+        width: 95px;
+    }
+
+    .client {
+        margin-left: 30px;
+    }
+
+    .arrow {
+        top: 80px;
+        right: 20px;
+    }
+
+    /**** Footer ****/
+    .nav2 li {
+        padding: 0 10px;
+    }
+
+    h4 {
+        margin: 0 0 30px 10px;
+    }
+}
+
+/* FIRST SMALL BREAK POINT */
+@media (max-width: 680px) {
+    /**** Section 'Practice' ****/
+    .overlap {
+        height: 400px;
+    }
+
+    /**** Footer ****/
+    .footerImg {
+        height: 45vh;
+    }
+
+    .footer,
+    .nav2 ul {
+        flex-direction: column;
+    }
+
+    .footerNav .innerList {
+        display: flex;
+        flex-direction: row;
+    }
+
+    h4 {
+        margin: 0 0 15px 0;
+    }
+
+    li.footerNav {
+        margin: 4% 0;
+        padding: 0;
+    }
+
+    .innerList li {
+        padding-left: 0;
+        padding-right: 20px;
+    }
+
+    .contactInfo {
+        border-bottom: 1px solid #9c9b98;
+        padding-bottom: 15px;
+        margin-bottom: 10px;
+    }
+
+    .Juno {
+        text-align: center;
+    }
+}
+
+/* LANDSCAPE & SMALLER PHONES - 3rd BIG BREAK POINT */
+@media (max-width: 480px) {
+    /* general tweaks */
+    h2 {
+        font-size: 2.2rem;
+    }
+
+    p {
+        font-size: 1.6rem;
+    }
+
+    h1,
+    .practice button,
+    .spotlight p,
+    .gallery li,
+    .form p,
+    .name,
+    .email,
+    .info,
+    textarea,
+    .form button,
+    .clientsParagraph {
+        width: 100%;
+    }
+
+    /**** Header ****/
+    /* navigation bar */
+    .nav1 .logo {
+        font-size: 2.2rem
+    }
+
+    .menu,
+    .Juno {
+        font-size: 1.4rem;
+    }
+
+    label[for="toggle"] {
+        right: 26px;	
+    }
+
+    ul.slideOut-menu a {
+        font-size: 2.8rem;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    /**** Header ****/
+    #content1::after {
+        content: "\a";
+        white-space: pre;
+    }
+
+    #content2::before {
+        content: "\a";
+        white-space: pre;
+    }
+
+    .img-container {
+        height: 250px;
+    }
+
+    .img-container::before {
+        top: -28%;
+        left: 32%;
+    }
+
+    /**** Section 'Practice' ****/
+    .overlap {
+        height: 340px;
+    }
+
+    .imgOne {
+        width: 65%;
+    }
+
+    .imgTwo {
+        width: 70%;
+    }
+
+    /**** Section 'Spotlight'****/
+    .gallery {
+        flex-direction: column;
+    }
+
+    .gallery li {
+        height: 200px;
+        margin: 0 0 60px 0;
+    }
+
+    .gallery img,
+    h3 {
+        display: block;
+    }    
+
+    h3 {
+        position: unset;
+        padding-left: 10px;
+    }
+
+    /**** Section 'Clients' *****/
+    .clientsParagraph {
+        font-size: 2rem;
+        margin-bottom: 25px;
+    }
+
+    .clientPic {
+        height: 80px;
+        width: 80px;
+    }
+
+    .clientName {
+        font-size: 2.2rem;
+    }
+
+    .clientCompany {
+        font-size: 1.3rem;
+    }
+
+    .client {
+        margin-left: 20px;
+    }
+
+    .arrow {
+        top: 100px;
+        right: 10px;
+    }
+
+    /**** FOOTER ****/
+    .footerImg {
+        height: 25vh;
+    }
+}
+
+/* SMALLEST PHONES - 2nd SMALL BREAK POINT */
+@media (max-width: 350px) {
+    /**** Header ****/
+    h1 {
+        font-size: 2.1rem;
+    }
+
+    #content1::after {
+        content: "\a";
+        white-space: pre;
+    }
+
+    #content2::before {
+        content: "\a";
+        white-space: pre;
+    }
+
+    label[for="toggle"] {
+        right: 20px;	
+    }
+
+    .img-container::before {
+        left: 28%;
+    }
+
+    /**** Section 'Practice' ****/
+    .overlap {
+        height: 250px;
+    }
+
+    .imgOne {
+        width: 60%;
+    }
+
+    .imgTwo {
+        width: 65%;
+    }
+}

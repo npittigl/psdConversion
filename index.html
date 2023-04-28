@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <title>PROJECT TWO</title>
+    <link rel="stylesheet" href="Styles/style.css">
+</head>
+<body>
+    <!-- header begins -->
+    <header>
+        <!-- wrapper begins -->
+        <div class="wrapper"> 
+            <!-- navigation begins -->
+            <nav class="nav1 flex-container">
+                <!-- logo -->
+                <div class="logo logoNav">
+                    <a href="#home" >Spaces</a>
+                </div>
+
+                <!-- icon for slide out menu on smaller screen -->
+                <label for="toggle"><p class="menu">MENU</p><span class="sr-only">Open or close Main Menu</span></label>
+                <input type="checkbox" id="toggle" name="toggle">
+
+                <!-- nav links -->
+                <ul class="flex-container slideOut-menu">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <!-- navigation ends -->
+            
+            <!--h1 & header image begins -->
+            <div class="header-text flex-container">
+                <h1><span id="content1">Spaces is an</span> architecture studio based <span id="content2">in Toronto, Canada</span></h1>
+
+                <div class="img-container">
+                    <img src="./assets/header.jpg" alt="Interior of a home's furnished living room with fireplace and view of backyard deck through glass sliding doors">
+                </div>
+            </div>
+            <!-- h1 & header image ends -->
+        </div>
+        <!-- wrapper ends -->
+    </header>
+    <!-- header ends -->
+    
+    <main><!-- main begins -->
+        <!-- section 'practice' begins -->
+        <section class="practice">
+            <!-- wrapper begins -->
+            <div class="wrapper flex-container">
+                <!-- text container begins -->
+                <div class="practice-text flex-container">
+                    <h2>Our Practice</h2>
+                    <p>Manifestation spirit guides quartz, Reiki practioner stones oracle peace healer goddess sage charms. Energy healing pendulum meditate divination practitioner candles chanting massage Buddha. Divine Light Worker herbalist, lavender love compassion practioner pendulum massage fibonacci sage. Dance peace angels awakening. Love Flower of Life tarot shamantic. Quartz spirit guides divination peace, herbalist chakra clearing full moon shaman.</p>
+                    <!-- button -->
+                    <div>
+                        <button><a href="#">Send Message</a></button>
+                    </div>
+                </div>
+                <!--text container ends -->
+
+                <!-- img container begins -->
+                <div class="flex-container overlap">
+                    <!-- first image -->
+                    <div class="imgOne ">
+                        <img src="./assets/image1.jpg" alt="Kitchen with white cupboards, light wood accents and flooring; long white island with wooden bar stools">
+                    </div>
+                    <!-- second image -->
+                    <div class="imgTwo">
+                        <img src="./assets/image2.jpg" alt="different angle of same kitchen that shows how it opens to a furnished dining room with dark chairs and table">
+                    </div>
+                </div>
+                <!-- img container ends -->
+            </div>
+            <!-- wrapper ends -->
+        </section>
+        <!-- section 'practice' ends -->
+        
+        <!-- section 'spotlight' begins -->
+        <section class="spotlight">
+            <!-- wrapper begins -->
+            <div class="wrapper">
+                <h2>Spotlight</h2>
+                <p>Manifestation spirit guides quartz, Reiki practioner stones oracle peace healer goddess sage charms.</p>
+
+                <!-- gallery begins -->
+                <ul class=" gallery flex-container">
+                    <li class="half picOne">
+                        <img src="./assets/image3.jpg" alt="white kitchen with quartz island countertop and quartz backsplash with black appliances; kitchen includes two ovens and 3 barstools at island counter">
+                        <h3>Eloise Avenue</h3>
+                    </li>
+                    <li class="half picTwo">
+                        <img src="./assets/image4.jpg" alt="view of house from outside with square architecture, mostly made of wood panels and large glass windows">
+                        <h3>Gray Residence</h3>
+                    </li>
+                    <li class="thirds picThree full">
+                        <img src="./assets/image5.jpg" alt="indoor eatery with large windows that floods space with natural light; includes picnic style tables and benches with low hanging lights ">
+                        <h3>Basil Lab</h3>
+                    </li>
+                    <li class="thirds picFour">
+                        <img src="./assets/image6.jpg" alt="furnished basement with small table and 3 chairs; dark wood accents including wood beams on ceiling">
+                        <h3>Jo Residence</h3>
+                    </li>
+                    <li class="thirds picFive">
+                        <img src="./assets/image7.jpg" alt="indoor cafe with round tables and stools and lots of plants and greenery to create an outdoor garden aesthetics">
+                        <h3>Rentea</h3>
+                    </li>
+                </ul>
+                <!-- gallery ends -->
+            </div>
+            <!-- wrapper ends -->
+        </section>
+        <!-- section 'spotlight' ends -->
+        
+        <!-- form section begins -->
+        <section class="form">
+            <!-- form & wrapper begins -->
+            <form action="#" method="#" class="myForm wrapper flex-container" name="myForm">
+                <div>
+                    <h2>Tell us about your ideas</h2>
+                    <p>Manifestation spirit guide quartz, Reiki practioner stones oracle peace healer goddess sage charms.</p>
+                </div>
+                
+                <!-- form name & email input -->
+                <div class="info flex-container">
+                    <!-- form user name input -->
+                    <div class="inputGroup name flex-container">
+                        <label for="userName">Name</label>
+                        <input type="text" id="name" name="userName" required>
+                    </div>   
+
+                    <!-- form user email input -->
+                    <div class="inputGroup email flex-container">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </div>
+
+                <!-- form textarea -->
+                <div class="inputGroup flex-container">
+                    <label for="message">Message</label>
+                    <textarea name="userMessage" id="userMessage" cols="30" rows="10" minlength="5" maxlength="300"></textarea>  
+                </div>
+
+                <!-- form button -->
+                <div>
+                    <button><a href="#">Send Message</a></button>
+                </div>
+            </form>
+            <!-- form & wrapper ends -->
+        </section>
+        <!-- form section ends -->
+        
+        <!-- section 'clients' begins -->
+        <section class="clients">
+            <!-- wrapper begins -->
+            <div class="wrapper">
+                <h2>Words from our clients</h2>
+                <!-- client review begins-->
+                <div class="review">
+                    <!-- client quote -->
+                    <p class="clientsParagraph">Spaces were an incredible team of passionate creatives, who truly transformed our spaces into a beautiful sanctuary.</p>
+                    <!-- client photo and name -->
+                    <div class="clientInfo flex-container">
+                        <img src="./assets/image10.jpg" class="clientPic" alt="Picture of Jaime Jorge">
+                    
+                        <div class="client">
+                            <p class="clientName">Jaime Jorge</p>
+                            <p class="clientCompany">Founder, RENTEA</p>
+                        </div>
+                        <a href="#"><img src="./assets/arrow.svg" class="arrow" alt="#"></a>
+                    </div>
+                </div>
+                <!-- client review ends -->
+            </div>
+            <!-- wrapper ends -->
+        </section>
+        <!-- section ends -->
+    </main>
+    <!-- main ends -->
+    
+    <!-- footer begins -->
+    <footer>
+        <!-- wrapper begins -->
+        <div class="wrapper">
+            <img src="./assets/image9.jpg" alt="Office space with chairs, shelves and corner couch by a window." class="footerImg">
+            
+            <!-- business contact info & footer nav begins-->
+            <div class="footer flex-container">
+                <div class="contactInfo">
+                    <a class="logo" href="#home">Spaces</a>
+                    <div class="contact">
+                        <p>129 Jordan Ave,</p>
+                        <p>Toronto, CA M22 324</p>
+                    </div>
+                    <p class="contact">(232) - 222 - 2522</p>
+                    <p class="contact">info@spaces-studio.com</p>
+                </div>
+
+                <!-- footer navigation begins -->
+                <nav class="nav2">
+                    <ul class="flex-container">
+                        <!-- menu links -->
+                        <li class="footerNav">
+                            <h4>Menu</h4> 
+                            <ul class=" innerList">
+                                <li><a href="#">Services</a></li>
+                                <li><a href="#">Who We Are</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- project links -->
+                        <li class="footerNav">
+                            <h4>Projects</h4>
+                            <ul class=" innerList">
+                                <li><a href="#">Residential</a></li>
+                                <li><a href="#">Commercial</a></li>
+                                <li><a href="#">Conceptual</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- social media links -->
+                        <li class="footerNav">
+                            <h4>Follow</h4>
+                            <ul class=" innerList">
+                                <li><a href="#">Instagram</a></li>
+                                <li><a href="#">Youtube</a></li>
+                                <li><a href="#">Houzz</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- footer navigation ends -->
+            </div>
+            <!-- business contact info & footer nav ends-->
+
+            <!-- copyright -->
+            <p class="Juno">Created at Juno College of Technology</p>
+        </div>
+        <!-- wrapper ends -->
+    </footer>
+    <!-- footer ends -->
+</body>
+</html>
